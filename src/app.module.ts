@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://manuelfbs:321Shalom321@cluster0.irhtnet.mongodb.net/?retryWrites=true&w=majority',
+      'mongodb+srv://manuelfbs:321Shalom321@cluster0.irhtnet.mongodb.net/nestjsdb?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],

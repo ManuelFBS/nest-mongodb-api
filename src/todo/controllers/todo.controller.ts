@@ -1,4 +1,12 @@
-import { Controller } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
+import { TodoService } from '../services/todo.service';
 
 @Controller('todo')
-export class TodoController {}
+export class TodoController {
+  constructor(private todoService: TodoService) {}
+
+  @Post('create')
+  public async create(@Body() createTodo: any) {
+    return createTodo;
+  }
+}

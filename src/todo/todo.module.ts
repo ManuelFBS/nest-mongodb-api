@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Todo, TodoSchema } from './schemas/todo.schema';
+import { TodoController } from './controllers/todo.controller';
 
 @Module({
   imports: [
@@ -11,5 +12,6 @@ import { Todo, TodoSchema } from './schemas/todo.schema';
       },
     ]),
   ],
+  controllers: [TodoController],
 })
 export class TodoModule {}

@@ -15,7 +15,7 @@ export class Todo {
   description: string;
 
   @Prop({ default: TodoStatus.PENDING })
-  statatus: TodoStatus;
+  status: TodoStatus;
 }
 
 export const TodoSchema = SchemaFactory.createForClass(Todo);

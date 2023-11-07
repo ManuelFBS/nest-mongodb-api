@@ -17,7 +17,4 @@ import { ConfigModule } from '@nestjs/config';
   controllers: [AppController],
   providers: [AppService],
 })
-
-// 'mongodb+srv://manuelfbs:321Shalom321@cluster0.irhtnet.mongodb.net/nestjsdb?retryWrites=true&w=majority'
-//
 export class AppModule {}
